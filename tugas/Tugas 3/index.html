@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header>
+    <h1>Selamat Datang di Website Sederhana</h1>
+</header>
+  
+<nav>
+    <ul>
+        <li><a href="#">Beranda</a></li>
+        <li><a href="#">Tentang</a></li>
+        <li><a href="#">Layanan</a></li>
+        <li><a href="#">Kontak</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <section class="content">
+        <h2>Formulir Pendaftaran</h2>
+        <p>Silakan isi formulir di bawah ini untuk mendaftar.</p>
+
+        <form>
+            <div class="form-group">
+                <label for="nama">Nama Lengkap:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin:</label>
+                <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki">
+                <label for="laki">Laki-laki</label>
+                <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan">
+                <label for="perempuan">Perempuan</label> <hr>
+            </div>
+
+            <div class="form-group">
+                <label>Hobi:</label>
+                <input type="checkbox" id="musik" name="hobi" value="Musik">
+                <label for="musik">Musik</label>
+                <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                <label for="olahraga">Olahraga</label>
+                <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                <label for="membaca">Membaca</label> <hr>
+            </div>
+
+            <div class="form-group">
+                <label for="kota">Pilih Kota:</label>
+                <select id="kota" name="kota">
+                    <option value="">-- Pilih Kota --</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="medan">Medan</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pesan">Pesan Tambahan:</label>
+                <textarea id="pesan" name="pesan" placeholder="Tulis pesan di sini..."></textarea>
+            </div>
+
+            <button type="submit" class="btn">Kirim</button>
+        </form>
+    </section>
+
+    <aside class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan.</p>
+    </aside>
+</div>
+
+</body>
+</html>
